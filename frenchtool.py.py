@@ -1,0 +1,44 @@
+import random
+chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+wordlist = []
+badlist = []
+eng = []
+fre = []
+end = []
+end2= []
+with open('words.txt') as f:
+    full = [line.rstrip('\n') for line in f]
+for i in full:
+        if len(i) < 20:
+            if "/" in i or "]" in i:
+                badlist.append(i)
+            else:
+                wordlist.append(i.split("\t"))
+for i in wordlist:
+        eng.append(i[:1])
+        fre.append(i[1:])
+quiz = "begin"
+while quiz != "quit":
+    index = random.randint(0,len(eng))
+    quiz = input("Translate "+ str(eng[index])+" ")
+    trans = str(fre[index])
+    for i in trans:
+        if i in chars:
+            end.append(i)
+        else:
+            badlist.append(i)
+    for i in quiz:
+        if i in chars:
+            end2.append(i)
+        else:
+            badlist.append(i)
+
+    if end == end2:
+        print("yay")
+        end = []
+        end2 = []
+    else:
+        print("boo")
+        print(fre[index])
+        end = []
+        end2=[]
