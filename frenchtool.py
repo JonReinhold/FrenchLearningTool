@@ -34,11 +34,11 @@ while quiz != "quit":
             badlist.append(i)
 
     if end == end2:
-        print("yay")
+        print("Correct.")
         end = []
         end2 = []
     else:
-        print("boo")
+        print("That's not quite right..")
         print(fre[index])
         end = []
         end2=[]
