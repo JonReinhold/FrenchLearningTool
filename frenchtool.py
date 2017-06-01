@@ -1,4 +1,7 @@
 import random
+from difflib import SequenceMatcher
+def check(w, v):
+    return SequenceMatcher(None, w, v).ratio()
 chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 wordlist = []
 badlist = []
@@ -40,5 +43,6 @@ while quiz != "quit":
     else:
         print("That's not quite right..")
         print(fre[index])
+        print(check(end, end2))
         end = []
         end2=[]
