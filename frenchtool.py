@@ -21,6 +21,7 @@ for i in wordlist:
         eng.append(i[:1])
         fre.append(i[1:])
 quiz = "begin"
+#press quit to exit
 while quiz != "quit":
     index = random.randint(0,len(eng))
     quiz = input("Translate "+ str(eng[index])+" ")
