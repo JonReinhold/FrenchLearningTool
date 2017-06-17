@@ -1,5 +1,5 @@
 # FrenchLearningTool
-Smart flashcard tool for learning French
+Smart flashcard tool for learning French.
 
 
 Changelog:
