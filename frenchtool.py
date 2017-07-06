@@ -9,8 +9,11 @@ eng = []
 fre = []
 end = []
 end2= []
+with open('bad.text') as b:
+    badfull = [line.rstrip('\n') for line in f]
 with open('words.txt') as f:
     full = [line.rstrip('\n') for line in f]
+    
 for i in full:
         if len(i) < 20:
             if "/" in i or "]" in i:
@@ -47,3 +50,5 @@ while quiz != "quit":
         print(check(end, end2))
         end = []
         end2=[]
+for word in badlist:
+  badtext.write("%s\n" % word)
