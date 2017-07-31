@@ -1,7 +1,9 @@
 import random
 from difflib import SequenceMatcher
+
 def check(w, v):
     return SequenceMatcher(None, w, v).ratio()
+
 chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 wordlist = []
 badlist = []
@@ -9,6 +11,7 @@ eng = []
 fre = []
 end = []
 end2= []
+
 with open('words.txt') as f:
     full = [line.rstrip('\n') for line in f]
 for i in full:
@@ -17,10 +20,13 @@ for i in full:
                 badlist.append(i)
             else:
                 wordlist.append(i.split("\t"))
+                
 for i in wordlist:
         eng.append(i[:1])
         fre.append(i[1:])
+        
 quiz = "begin"
+
 #press quit to exit
 while quiz != "quit":
     index = random.randint(0,len(eng))
