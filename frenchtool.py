@@ -51,5 +51,5 @@ while quiz != "quit":
         print("That's not quite right..")
         print(fre[index])
         print(check(end, end2))
-        end = []
+        end =[]
         end2=[]
