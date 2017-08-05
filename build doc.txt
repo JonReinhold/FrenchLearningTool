@@ -1,0 +1,13 @@
+French Tool Architecture
+
+Dictionary of English(key) and French(value) Words
+Run main loop, display French Word 
+prompt for user input of translation 
+compare input to key of value displayed
+return "yes" if correct and return similarity if incorrect
+display new French word 
+
+press Q to exit loop
+
+
+//write all words and similarities (100% if correct) to file for learning and resending purposes 
