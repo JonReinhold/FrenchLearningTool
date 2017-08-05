@@ -1,7 +1,5 @@
 import random
 frenchList = [('yes','oui'),('no','non'),('hello','bonjour')]
-#for key, value in frenchDict.items():
-#    print(key)
 
 def wordFeed():
         index = random.randint(0,len(frenchList)-1)
