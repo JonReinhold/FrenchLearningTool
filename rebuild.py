@@ -8,7 +8,8 @@ def wordFeed():
         word = frenchList[index]
         return word[1]
 
-print("Test your knowledge! Type H for help or Q to quit. ")
+print("**************************************** \n Test your knowledge! \n Type H for help or Q to quit. ")
+print("****************************************")
 while True:
     response = input("What is " + wordFeed() + " in English? ")
     if response == word[0]:
@@ -17,7 +18,10 @@ while True:
         print("Exiting tool...")
         break
     elif response == "H":
-        print("//TODO add help text.")
+        print("****************************************\n "
+              "Translate the French words and they will be sorted "
+              "\n and asked again based on how well you know them. \n Press Q to exit.")
+        print("****************************************")
     else:
         print("Wrong!")
 
