@@ -1,8 +1,16 @@
 import random
-frenchDict = {'yes':'oui','no':'non','hello':'bonjour'}
+frenchList = [('yes','oui'),('no','non'),('hello','bonjour')]
 #for key, value in frenchDict.items():
 #    print(key)
-x = True
-while x = True:
-    index = random.randint(0,len(frenchDict))
-    for key in frenchDict.items()
+
+def wordFeed():
+        index = random.randint(0,len(frenchList)-1)
+        global word
+        word = frenchList[index]
+        return word[1]
+
+response = input("What is " + wordFeed() + " in English? ")
+if response == word[0]:
+    print("Correct!")
+else:
+    print("Wrong!")
