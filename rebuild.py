@@ -13,6 +13,7 @@ while True:
     if response == word[0]:
         print("Correct!")
     elif response == "Q":
+        print("Exiting tool...")
         break
     elif response == "H":
         print("//TODO add help text.")
