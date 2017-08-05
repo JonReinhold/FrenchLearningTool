@@ -7,6 +7,7 @@ def wordFeed():
         global word
         word = frenchList[index]
         return word[1]
+
 print("Test your knowledge! Type H for help or Q to quit. ")
 while True:
     response = input("What is " + wordFeed() + " in English? ")

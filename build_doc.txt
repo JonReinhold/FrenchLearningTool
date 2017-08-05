@@ -10,4 +10,7 @@ display new French word
 press Q to exit loop
 
 
+
 //write all words and similarities (100% if correct) to file for learning and resending purposes 
+add percent similar to the section of the list the word was pulled from e.g. 
+("yes", "oui", .98)
