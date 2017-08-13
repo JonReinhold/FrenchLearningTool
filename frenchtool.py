@@ -1,3 +1,6 @@
+##old poorly done rough draft saved for sentimental reasons
+##current project is in rebuild.py
+
 import random
 from difflib import SequenceMatcher
 
