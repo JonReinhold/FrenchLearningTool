@@ -7,9 +7,11 @@ def wordFeed():
         global word
         word = frenchList[index]
         return word[1]
+
 linebreak = "*"*45
 print(linebreak  + "\n Test your knowledge! \n Type H for help or Q to quit. ")
 print(linebreak)
+
 while True:
     response = input("What is " + wordFeed() + " in English? ")
     if response == word[0]:
