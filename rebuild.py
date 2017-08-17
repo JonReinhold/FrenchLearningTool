@@ -1,6 +1,7 @@
 #set up test list, will pull from file later
 import random
-frenchList = [('yes','oui'),('no','non'),('hello','bonjour')]
+from fuzzywuzzy import fuzz
+frenchList = [('yes','oui',0),('no','non',0),('hello','bonjour',0)]
 
 def wordFeed():
         index = random.randint(0,len(frenchList)-1)
@@ -25,5 +26,6 @@ while True:
               "\n and asked again based on how well you know them. \n Press Q to exit.")
         print(linebreak)
     else:
+
         print("Wrong!")
 
