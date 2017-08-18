@@ -1,6 +1,6 @@
-#set up test list, will pull from file later
 import random
 from fuzzywuzzy import fuzz
+
 frenchList = [('yes','oui',0),('no','non',0),('hello','bonjour',0)]
 
 def wordFeed():
