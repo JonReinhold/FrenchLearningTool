@@ -1,7 +1,11 @@
 import random
 from fuzzywuzzy import fuzz
+<<<<<<< HEAD
+frenchList = [['yes','oui',0],['no','non',0],['hello','bonjour',0]]
+=======
 
 frenchList = [('yes','oui',0),('no','non',0),('hello','bonjour',0)]
+>>>>>>> 87431c375fc9c79f5f4e101187d533d0e450f3e9
 
 def wordFeed():
         index = random.randint(0,len(frenchList)-1)
@@ -14,9 +18,10 @@ print(linebreak  + "\n Test your knowledge! \n Type H for help or Q to quit. ")
 print(linebreak)
 
 while True:
-    response = input("What is " + wordFeed() + " in English? ")
+    response = input("What is " + wordFeed() + " in English? \n" + "Previously you got this word " + str(word[2]) + "% correct. ")
     if response == word[0]:
         print("Correct!")
+        word[2] = 100
     elif response.upper() == "Q":
         print("Exiting tool...")
         break
@@ -29,4 +34,5 @@ while True:
         print("Wrong!")
         similarity = fuzz.ratio(response, word[0])
         print("Your answer was " + str(100 - similarity) + "% off.")
+        word[2] = similarity
 
