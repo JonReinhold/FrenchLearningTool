@@ -30,4 +30,3 @@ while True:
         similarity = fuzz.ratio(response, word[0])
         print("Your answer was " + str(100 - similarity) + "% off.")
         word[2] = similarity
-
