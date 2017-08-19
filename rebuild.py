@@ -1,11 +1,6 @@
 import random
 from fuzzywuzzy import fuzz
-<<<<<<< HEAD
 frenchList = [['yes','oui',0],['no','non',0],['hello','bonjour',0]]
-=======
-
-frenchList = [('yes','oui',0),('no','non',0),('hello','bonjour',0)]
->>>>>>> 87431c375fc9c79f5f4e101187d533d0e450f3e9
 
 def wordFeed():
         index = random.randint(0,len(frenchList)-1)
