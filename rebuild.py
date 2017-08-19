@@ -1,3 +1,4 @@
+#test comment
 import random
 from fuzzywuzzy import fuzz
 frenchList = [['yes','oui',0],['no','non',0],['hello','bonjour',0]]
@@ -30,4 +31,7 @@ while True:
         similarity = fuzz.ratio(response, word[0])
         print("Your answer was " + str(100 - similarity) + "% off.")
         word[2] = similarity
+<<<<<<< HEAD
 
+=======
+>>>>>>> 864f683d48927b0f6fc9511ee9bf0aaa8e07928c
