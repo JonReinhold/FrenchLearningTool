@@ -1,4 +1,4 @@
-##old poorly done rough draft saved for sentimental reasons
+##old poorly done rough draft 
 ##current project is in FrenchTool.py
 
 import random
