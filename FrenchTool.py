@@ -1,6 +1,9 @@
 import random 
 from fuzzywuzzy import fuzz
-frenchList = [['yes','oui',0],['no','non',0],['hello','bonjour',0],['not','pas',0],['you','vous',0],['in','dans',0],['dictionary', 'dictionnaire', 0]]
+
+#or read from file with a more robust dictionary 
+frenchList = [['yes','oui',0],['no','non',0],['hello','bonjour',0],['not','pas',0],
+              ['you','vous',0],['in','dans',0],['dictionary', 'dictionnaire', 0]]
 orderedFrenchList = []
 
 def wordFeed():
