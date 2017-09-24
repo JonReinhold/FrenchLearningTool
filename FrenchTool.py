@@ -30,7 +30,7 @@ while True:
               "\n and asked again based on how well you know them. \n Press Q to exit.")
         print(linebreak)
     else:
-        print("Wrong!")
+        print("Incorrect!")
         similarity = fuzz.ratio(response, word[0])
         print("Your answer was " + str(100 - similarity) + "% off.")
         word[2] = similarity
