@@ -4,6 +4,7 @@ from fuzzywuzzy import fuzz
 frenchList = [['yes','oui',0],['no','non',0],['hello','bonjour',0],['not','pas',0],
               ['you','vous',0],['in','dans',0],['dictionary', 'dictionnaire', 0]]
 orderedFrenchList = []
+linebreak = "*"*45
 
 def wordFeed():
         index = random.randint(0,len(frenchList)-1)
@@ -11,7 +12,6 @@ def wordFeed():
         word = frenchList[index]
         return word[1]
 
-linebreak = "*"*45
 print(linebreak  + "\n Test your knowledge! \n Type H for help or Q to quit. ")
 print(linebreak)
 
@@ -21,7 +21,7 @@ while True:
         print("Correct!")
         word[2] = 100
     elif response.upper() == "Q":
-        print("Exiting tool...")
+        print("See you next time!")
         break
     elif response.upper() == "H":
         print(linebreak + "\n "
