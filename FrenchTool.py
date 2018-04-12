@@ -7,7 +7,6 @@ frenchList = [['yes', 'oui', 0], ['no', 'non', 0], ['hello', 'bonjour', 0], ['no
 orderedFrenchList = []
 linebreak = "*"*45
 
-
 def wordfeed():
         index = random.randint(0,len(frenchList)-1)
         global word
@@ -37,5 +36,5 @@ def main():
             similarity = fuzz.ratio(response, word[0])
             print("Your answer was " + str(100 - similarity) + "% off.")
             word[2] = similarity
-# begin
+            
 main()
