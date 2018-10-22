@@ -1,7 +1,7 @@
 import random 
 from fuzzywuzzy import fuzz
 
-# Suprisingly hard to find a clean data set of French to English Words. Maybe for 2.0
+# Suprisingly hard to find a clean data set of French to English Words. 
 frenchList = [['yes', 'oui', 0], ['no', 'non', 0], ['hello', 'bonjour', 0], ['not', 'pas', 0],
               ['you', 'vous', 0], ['in', 'dans', 0], ['dictionary', 'dictionnaire', 0]]
 orderedFrenchList = []
@@ -36,5 +36,6 @@ def main():
             similarity = fuzz.ratio(response, word[0])
             print("Your answer was " + str(100 - similarity) + "% off.")
             word[2] = similarity
-            
+
+#run app            
 main()
